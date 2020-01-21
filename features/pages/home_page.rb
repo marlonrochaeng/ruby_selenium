@@ -1,5 +1,5 @@
 require_relative 'base_page.rb'
-require_relative '../maps/automationpratice_home_map.rb'
+require_relative '../maps/home_map.rb'
 
 class AutomationPraticeHome < BasePage
     attr_reader :a_pratice_map

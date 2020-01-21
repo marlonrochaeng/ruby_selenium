@@ -1,5 +1,5 @@
 require_relative 'base_page.rb'
-require_relative '../maps/automationpratice_auth_map.rb'
+require_relative '../maps/auth_map.rb'
 
 class AutomationPraticeAuth < BasePage
     attr_reader :a_pratice_map
