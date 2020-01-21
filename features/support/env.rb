@@ -39,5 +39,5 @@ end
 After do |scenario|
     @context[:finish_test_time] = Time.now
     result = scenario.status.to_s
-    generate_report(scenario)
+    generate_report(scenario) unless ENV['generate_evidences'].include?('false')
 end

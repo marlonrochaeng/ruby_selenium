@@ -32,6 +32,15 @@ class BasePage
         el.click
     end
 
+    def get_text(element)
+        el = wait_element(element)
+        el.text
+    end
+    
+    def get_elements(element)
+        @driver.find_elements(element)
+    end
+
     def send_keys_to(element, text) 
         el = wait_element(element)
         el.send_keys text
